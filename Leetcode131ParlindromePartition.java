@@ -4,6 +4,7 @@ class Leetcode131ParlindromePartition {
         dfs(s.toCharArray(), result, new ArrayList<>(), 0);
         return result;
     }
+
     private void dfs(char[] chars, List<List<String>> result, List<String> curList, int idx) {
         if (idx == chars.length) {
             result.add(new ArrayList<>(curList));
